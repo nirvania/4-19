@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="test">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script src="angular.js"></script>
+<script>
+var app=angular.module('test',[])
+app.controller('show',function($scope){
+	$scope.arr=[1,2,4,3];
+})
+</script>
+</head>
+
+<body ng-controller="show">
+<ul>
+	<li ng-repeat="item in arr">{{item}}</li>
+</ul>
+</body>
+</html>
